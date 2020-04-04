@@ -1,6 +1,1831 @@
-<html>
-  <head></head>
-  <body>
-Hello World
-  </body>
+<!DOCTYPE html>
+<html lang="en-US"
+	class=" js_active  vc_desktop  vc_transform  vc_transform ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+<link rel="stylesheet" id="colors" href="" type="text/css" media="all">
+<!-- Favicons/Logo================================================== -->
+<link rel="shortcut icon"
+	href=".\resources\images\mic.jpg"
+	type="image/png">
+
+<title>LifeCoach</title>
+<style type="text/css" media="screen">
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active,
+	#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td a.ui-state-active:hover,
+	body #booked-profile-page input[type=submit].button-primary:hover, body .booked-list-view button.button:hover,
+	body .booked-list-view input[type=submit].button-primary:hover, body table.booked-calendar input[type=submit].button-primary:hover,
+	body .booked-modal input[type=submit].button-primary:hover, body table.booked-calendar th,
+	body table.booked-calendar thead, body table.booked-calendar thead th,
+	body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+	body #booked-profile-page .booked-profile-header, body #booked-profile-page .booked-tabs li.active a,
+	body #booked-profile-page .booked-tabs li.active a:hover, body #booked-profile-page .appt-block .google-cal-button>a:hover,
+	#ui-datepicker-div.booked_custom_date_picker .ui-datepicker-header {
+	background: #37b048 !important;
+}
+
+body #booked-profile-page input[type=submit].button-primary:hover, body table.booked-calendar input[type=submit].button-primary:hover,
+	body .booked-list-view button.button:hover, body .booked-list-view input[type=submit].button-primary:hover,
+	body .booked-modal input[type=submit].button-primary:hover, body table.booked-calendar th,
+	body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button:hover,
+	body #booked-profile-page .booked-profile-header, body #booked-profile-page .appt-block .google-cal-button>a:hover
+	{
+	border-color: #37b048 !important;
+}
+
+body table.booked-calendar tr.days, body table.booked-calendar tr.days th,
+	body .booked-calendarSwitcher.calendar, body #booked-profile-page .booked-tabs,
+	#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead,
+	#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar thead th
+	{
+	background: #2b8938 !important;
+}
+
+body table.booked-calendar tr.days th, body #booked-profile-page .booked-tabs
+	{
+	border-color: #2b8938 !important;
+}
+
+#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a,
+	#ui-datepicker-div.booked_custom_date_picker table.ui-datepicker-calendar tbody td.ui-datepicker-today a:hover,
+	body #booked-profile-page input[type=submit].button-primary, body table.booked-calendar input[type=submit].button-primary,
+	body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,
+	body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,
+	body .booked-modal input[type=submit].button-primary, body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+	body #booked-profile-page .booked-profile-appt-list .appt-block.approved .status-block,
+	body #booked-profile-page .appt-block .google-cal-button>a, body .booked-modal p.booked-title-bar,
+	body table.booked-calendar td:hover .date span, body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+	body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover,
+	.booked-ms-modal .booked-book-appt /* Multi-Slot Booking */ {
+	background: #37b048;
+}
+
+body #booked-profile-page input[type=submit].button-primary, body table.booked-calendar input[type=submit].button-primary,
+	body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,
+	body .booked-list-view button.button, body .booked-list-view input[type=submit].button-primary,
+	body .booked-modal input[type=submit].button-primary, body #booked-profile-page .appt-block .google-cal-button>a,
+	body table.booked-calendar .booked-appt-list .timeslot .timeslot-people button,
+	body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active,
+	body .booked-list-view a.booked_list_date_picker_trigger.booked-dp-active:hover
+	{
+	border-color: #37b048;
+}
+
+body .booked-modal .bm-window p i.fa, body .booked-modal .bm-window a,
+	body .booked-appt-list .booked-public-appointment-title, body .booked-modal .bm-window p.appointment-title,
+	.booked-ms-modal.visible:hover .booked-book-appt {
+	color: #37b048;
+}
+
+.booked-appt-list .timeslot.has-title .booked-public-appointment-title {
+	color: inherit;
+}
+</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">
+.vc_custom_1470286354621 {
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+	background-image:
+		url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/slide.jpg?id=31)
+		!important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.vc_custom_1453175502076 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+	background-color: rgba(237, 234, 225, 0.5) !important;
+	*background-color: rgb(237, 234, 225) !important;
+}
+
+.vc_custom_1454297756670 {
+	background-color: rgba(237, 234, 225, 0.2) !important;
+	*background-color: rgb(237, 234, 225) !important;
+}
+
+.vc_custom_1452766900798 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+.vc_custom_1452828449397 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+.vc_custom_1453367742462 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+	background-color: rgba(237, 234, 225, 0.5) !important;
+	*background-color: rgb(237, 234, 225) !important;
+}
+
+.vc_custom_1453175624677 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+	background-color: rgba(237, 234, 225, 0.2) !important;
+	*background-color: rgb(237, 234, 225) !important;
+}
+
+.vc_custom_1454406029912 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+.vc_custom_1452840926474 {
+	padding-top: 60px !important;
+}
+
+.vc_custom_1452840857874 {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+.vc_custom_1470301853290 {
+	margin-bottom: 30px !important;
+}
+
+.vc_custom_1452826009702 {
+	margin-top: 20px !important;
+}
+
+.vc_custom_1473395040049 {
+	padding-top: 50px !important;
+	padding-bottom: 50px !important;
+	background-image:
+		url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/bg.jpg?id=16)
+		!important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+
+.vc_custom_1452833131037 {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.vc_custom_1470286303363 {
+	margin-bottom: 70px !important;
+}
+
+.vc_custom_1452833813241 {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+</style>
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<!--check  -->
+  	
+<style type="text/css">
+img.wp-smiley, img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="tribe-common-skeleton-style-css"
+	href="./resources/Css/common-skeleton.min.css"
+	type="text/css" media="all">
+<link rel="stylesheet" id="tribe-tooltip-css"
+	href="./resources/Css/tooltip.min.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="wp-block-library-css"
+	href="./resources/Css/style.min.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="wc-block-style-css"
+	href="./resources/Css/style.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-icons-css"
+	href="./resources/Css/icons.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-tooltipster-css"
+	href="./resources/Css/tooltipster.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-tooltipster-theme-css"
+	href="./resources/Css/tooltipster-light.css"
+	type="text/css" media="all">
+<link rel="stylesheet" id="booked-animations-css"
+	href="./resources/Css/animations.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-styles-css"
+	href="./resources/Css/styles.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-responsive-css"
+	href="./resources/Css/responsive.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="contact-form-7-css"
+	href="./resources/Css/styles(1).css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css"
+	href="./resources/Css/settings.css" type="text/css"
+	media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+.tp-caption a {
+	color: #ff7302;
+	text-shadow: none;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out
+}
+
+.tp-caption a:hover {
+	color: #ffa902
+}
+</style>
+<link rel="stylesheet" id="woocommerce-layout-css"
+	href="./resources/Css/woocommerce-layout.css"
+	type="text/css" media="all">
+<link rel="stylesheet" id="woocommerce-smallscreen-css"
+	href="./resources/Css/woocommerce-smallscreen.css"
+	type="text/css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" id="woocommerce-general-css"
+	href="./resources/Css/woocommerce.css" type="text/css"
+	media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required {
+	visibility: visible;
+}
+</style>
+<link rel="stylesheet" id="mentor-fonts-css"
+	href="./resources/Css/css" type="text/css" media="all">
+<link rel="stylesheet" id="mentor-font-awesome-css"
+	href="./resources/Css/font-awesome.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-font-elegant-css"
+	href="./resources/Css/elegant-fonts.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="fonts-Lato-css"
+	href="./resources/Css/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="mentor-bootstrap-css"
+	href="./resources/Css/bootstrap.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-zabuto_calendar-css"
+	href="./resources/Css/zabuto_calendar.min.css"
+	type="text/css" media="all">
+<link rel="stylesheet" id="mentor-bootstrap-select-css"
+	href="./resources/Css/bootstrap-select.min.css"
+	type="text/css" media="all">
+<link rel="stylesheet" id="mentor-carousel-css"
+	href="./resources/Css/owl.carousel.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-woo-css"
+	href="./resources/Css/woocommerce(1).css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-animate-css"
+	href="./resources/Css/animate.css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-style-css"
+	href="./resources/Css/style(1).css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="mentor-color-css"
+	href="./resources/Php/color.php" type="text/css"
+	media="all">
+<link rel="stylesheet" id="newsletter-css"
+	href="./resources/Css/style(2).css" type="text/css"
+	media="all">
+<link rel="stylesheet" id="booked-wc-fe-styles-css"
+	href="./resources/Css/frontend-style.css" type="text/css"
+	media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='vc_lte_ie9-css'  href='http://demo.oceanthemes.net/mentor/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css?ver=6.0.5' type='text/css' media='screen' />
+<![endif]-->
+<link rel="stylesheet" id="js_composer_front-css"
+	href="./resources/Css/js_composer.min.css" type="text/css"
+	media="all">
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/jquery.js"></script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/jquery-migrate.min.js"></script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/mentor\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/mentor\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/demo.oceanthemes.net\/mentor\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/add-to-cart.min.js"></script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/woocommerce-add-to-cart.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var booked_wc_variables = {"prefix":"booked_wc_","ajaxurl":"http:\/\/demo.oceanthemes.net\/mentor\/wp-admin\/admin-ajax.php","i18n_confirm_appt_edit":"","i18n_pay":"Are you sure you want to add the appointment to cart and go to checkout?","i18n_mark_paid":"Are you sure you want to mark this appointment as \"Paid\"?","i18n_paid":"Paid","i18n_awaiting_payment":"Awaiting Payment","checkout_page":"http:\/\/demo.oceanthemes.net\/mentor\/checkout\/"};
+/* ]]> */
+</script>
+<script type="text/javascript"
+	src="./Home Booked – Mentor_files/frontend-functions.js"></script>
+<style type="text/css">
+.cusboxes .box {
+	padding: 60px 200px;
+}
+
+body table.booked-calendar td {
+	border-top: 1px solid #e5e5e5;
+}
+
+.heading2 {
+	background-image:
+		url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/bg.jpg);
+}
+
+.modal {
+	z-index: 9999;
+	top: 50px;
+}
+
+/*Newsletter*/
+.tnp-subscription form {
+	position: relative;
+}
+
+div.tnp-subscription input[type="email"] {
+	padding-right: 70px;
+	background: #fff;
+	border: 1px solid rgb(221, 221, 221);
+}
+
+div.tnp-field input[type="submit"] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 60px;
+	font-size: 0;
+	background: transparent;
+	outline: none;
+}
+
+div.tnp-field input[type="submit"]:focus {
+	outline: none;
+}
+
+.tnp-subscription form:before {
+	content: '$';
+	font-family: 'ElegantIcons';
+	font-size: 20px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 60px;
+	line-height: 50px;
+	text-align: center;
+	height: 100%;
+	background: rgb(221, 221, 221);
+}
+
+.tnp-field label {
+	display: none !important;
+}
+
+@media ( max-width : 767px) {
+	.tp-parallax-wrap h1 br {
+		line-height: inherit !important;
+	}
+	.tp-parallax-wrap {
+		left: auto !important;
+	}
+	.tp-resizeme {
+		line-height: inherit !important;
+	}
+	.step p {
+		min-height: 90px;
+	}
+	.navigation .main-nav nav.show-nav ul.menu {
+		overflow-y: auto;
+		max-height: 500px;
+	}
+}
+</style>
+<noscript>
+	<style>
+.woocommerce-product-gallery {
+	opacity: 1 !important;
+}
+</style>
+</noscript>
+<script type="text/javascript">function setREVStartSize(e){									
+			try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+			if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+			}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+<noscript>
+	<style>
+.wpb_animate_when_almost_visible {
+	opacity: 1;
+}
+</style>
+</noscript>
+<link rel="stylesheet" id="fullcolor"
+	href="" type="text/css"
+	media="all">
+<style type="text/css"></style>
+</head>
+
+<body
+	class="page-template page-template-page-templates page-template-template-canvas page-template-page-templatestemplate-canvas-php page page-id-462 theme-mentor woocommerce-js tribe-js wpb-js-composer js-comp-ver-6.0.5 vc_responsive">
+	<div class="images-preloader" style="display: none;">
+		<div class="preloader4"></div>
+	</div>
+	<div class="overlay"></div>
+	<div class="outer-wrapper">
+		<div class="page-wrapper ">
+
+			<div class="head-layout h1-layout">
+				<header class="navigation header1  header-sticky " id="top">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="user-btn">
+									<a href="login page**************************"><i
+										class="fa fa-sign-in"></i> Login</a> <a
+										href="login page*******************************"><i
+										class="fa fa-pencil"></i> Register</a>
+								</div>
+							</div>
+							<div class="col-sm-8">
+								<div class="secondary-nav">
+									<ul class="list-info">
+										<li><a href="mailto:HELLO@MENTOR.COM"><i
+												class="fa fa-envelope"></i> HELLO@MENTOR.COM</a></li>
+										<li><i class="fa fa-phone"></i> 719-222-7995</li>
+									</ul>
+									<!-- social icons -->
+									<ul class="social-list">
+										<li><a target="_blank"
+											href="facebook link **********************************"><i
+												class="fa fa-facebook"></i>Facebook</a></li>
+										<li><a target="_blank"
+											href="twitter link ***************************"><i
+												class="fa fa-twitter"></i>Twitter</a></li>
+										<li><a target="_blank"
+											href="pininterest link ******************"><i
+												class="fa fa-pinterest"></i>PinInterest</a></li>
+										<li><a href="callto://+841638748373"><i
+												class="fa fa-skype"></i>Skype</a></li>
+										<li><a target="_blank"
+											href="instagram link **********************************"><i
+												class="fa fa-instagram"></i>Instagram</a></li>
+									</ul>
+									<!-- social icons close -->
+								</div>
+							</div>
+						</div>
+						<!--/.secondary-nav-->
+						<div class="main-nav">
+							<div class="brand">
+								<a href=""><img
+									src="" alt="" height=2% width=2%></a>
+							</div>
+							<!--/.brand-->
+							<nav>
+								<div class="menu-primary-container">
+									<ul id="menu-primary-2" class="menu">
+										<li
+											class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-786"><a
+											href="file:///C:/Users/ashim_khushboo/git/Ashim-Khushboo.github.io/index.html">Home</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-248"><a
+											href="">About Me</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247"><a
+											href="">Change Your Life</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-246"><a
+											href="">Workshops</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-765"><a
+											href="">Shop</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a
+											href="">Blog</a></li>
+										<li
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-244"><a
+											href="">Meet Me</a></li>
+									</ul>
+								</div>
+								<div class="nav-toggle">
+									<i class="icon_menu"></i>
+								</div>
+							</nav>
+							<a
+								href=""
+								class="asad"><i class="icon_calendar"
+								title="Make an Appointment"></i></a>
+							<!--/.icon-->
+						</div>
+						<!--/.main-nav-->
+					</div>
+					<!--/.container-->
+				</header>
+			</div>
+
+			<section
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1470286354621 vc_row-has-fill">
+				<div class="container">
+					<div class="row">
+						<div
+							class="hero-slider wpb_column vc_column_container vc_col-sm-5">
+							<div class="">
+								<h2 style="color: #000000; text-align: center"
+									class="vc_custom_heading vc_custom_1470301853290">Solid
+									Business Advice</h2>
+								<div class="wpb_text_column wpb_content_element  zzz">
+									<div class="wpb_wrapper">
+										<div class="booked-calendar-shortcode-wrap">
+											<div class="booked-calendar-wrap small"
+												data-default="2020-03-01" style="height: 445px;">
+												<table class="booked-calendar booked-pa-active"
+													data-calendar-date="2020-03-01">
+													<thead>
+
+
+														<tr>
+															<th colspan="7"><span class="calendarSavingState">
+																	<i
+																	class="booked-icon booked-icon-spinner-clock booked-icon-spin"></i>
+															</span> <span class="monthName"> March 2020 </span> <a
+																href="file:///C:/Users/ashim_khushboo/git/Ashim-Khushboo.github.io/index.html"
+																data-goto="2020-04-01" class="page-right"><i
+																	class="booked-icon booked-icon-arrow-right"></i></a></th>
+														</tr>
+														<tr class="days">
+															<th>Mon</th>
+															<th>Tue</th>
+															<th>Wed</th>
+															<th>Thu</th>
+															<th>Fri</th>
+															<th>Sat</th>
+															<th>Sun</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="week">
+															<td data-date="2020-02-24" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">24</span></span></td>
+															<td data-date="2020-02-25" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">25</span></span></td>
+															<td data-date="2020-02-26" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">26</span></span></td>
+															<td data-date="2020-02-27" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">27</span></span></td>
+															<td data-date="2020-02-28" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">28</span></span></td>
+															<td data-date="2020-02-29" class="prev-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">29</span></span></td>
+															<td data-date="2020-03-1" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">1</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-2" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">2</span></span></td>
+															<td data-date="2020-03-3" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">3</span></span></td>
+															<td data-date="2020-03-4" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">4</span></span></td>
+															<td data-date="2020-03-5" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">5</span></span></td>
+															<td data-date="2020-03-6" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">6</span></span></td>
+															<td data-date="2020-03-7" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">7</span></span></td>
+															<td data-date="2020-03-8" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">8</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-9" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">9</span></span></td>
+															<td data-date="2020-03-10" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">10</span></span></td>
+															<td data-date="2020-03-11" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">11</span></span></td>
+															<td data-date="2020-03-12" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">12</span></span></td>
+															<td data-date="2020-03-13" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">13</span></span></td>
+															<td data-date="2020-03-14" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">14</span></span></td>
+															<td data-date="2020-03-15" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">15</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-16" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">16</span></span></td>
+															<td data-date="2020-03-17" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">17</span></span></td>
+															<td data-date="2020-03-18" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">18</span></span></td>
+															<td data-date="2020-03-19" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">19</span></span></td>
+															<td data-date="2020-03-20" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">20</span></span></td>
+															<td data-date="2020-03-21" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">21</span></span></td>
+															<td data-date="2020-03-22" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">22</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-23" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">23</span></span></td>
+															<td data-date="2020-03-24" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">24</span></span></td>
+															<td data-date="2020-03-25" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">25</span></span></td>
+															<td data-date="2020-03-26" class="today"
+																style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">26</span></span></td>
+															<td data-date="2020-03-27" class="" style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">27</span></span></td>
+															<td data-date="2020-03-28" class="" style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">28</span></span></td>
+															<td data-date="2020-03-29" class="prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">29</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-30" class="" style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">30</span></span></td>
+															<td data-date="2020-03-31" class="" style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">31</span></span></td>
+															<td data-date="2020-04-1" class="next-month"
+																style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">1</span></span></td>
+															<td data-date="2020-04-2" class="next-month"
+																style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">2</span></span></td>
+															<td data-date="2020-04-3" class="next-month"
+																style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">3</span></span></td>
+															<td data-date="2020-04-4" class="next-month"
+																style="height: 65px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">4</span></span></td>
+															<td data-date="2020-04-5" class="next-month prev-date"
+																style="height: 65px;"><span class="date"
+																style="line-height: 63px;"><span class="number"
+																	style="line-height: 63px;">5</span></span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1453175502076 vc_row-has-fill">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="">
+								<div class="feature-box">
+									<i class="icon_comment_alt"></i>
+									<h3>My Mentoring</h3>
+									<p>Fusce facilisis nec ante et accumsan. Ut malesuada
+										tristique sagittis</p>
+									<a href=""><i
+										class="arrow_right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="">
+								<div class="feature-box">
+									<i class="icon_id-2"></i>
+									<h3>Successful Stories</h3>
+									<p>Fusce facilisis nec ante et accumsan. Ut malesuada
+										tristique sagittis</p>
+									<a href=""><i
+										class="arrow_right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="">
+								<div class="feature-box">
+									<i class="icon_briefcase"></i>
+									<h3>For Companies</h3>
+									<p>Fusce facilisis nec ante et accumsan. Ut malesuada
+										tristique sagittis</p>
+									<a href=""><i
+										class="arrow_right"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-3">
+							<div class="">
+								<div class="feature-box">
+									<i class="icon_box-checked"></i>
+									<h3>Kick Up Your Career</h3>
+									<p>Fusce facilisis nec ante et accumsan. Ut malesuada
+										tristique sagittis</p>
+									<a href=""><i
+										class="arrow_right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1454297756670 vc_row-has-fill">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+
+								<div class="block item">
+									<div class="container">
+										<blockquote class="center">
+											<p>
+												Praesent cursus nulla non arcu tempor, ut egestas elit
+												tempus. In ac ex fermentum, gravida<br> felis nec,
+												tincidunt ligula. Sed dapibus mauris ullamcorper.
+											</p>
+											<footer>JANE DOE</footer>
+										</blockquote>
+										<!--/ blockquote-->
+									</div>
+									<!--/ .container-->
+
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vc_rows wpb_row vc_row-fluid vc_custom_1452766900798">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<h2 style="">About Me</h2>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-6">
+							<div class="">
+								<div class="center">
+									<img src="./resources/images/author.jpg"
+										class="circle" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-6">
+							<div class="">
+								<h3 style="margin-bottom: 0px;">
+									<strong>Jane Doe</strong>
+								</h3>
+
+								<h5 style="">A personal mentor</h5>
+								<div class="vc_empty_space" style="height: 20px">
+									<span class="vc_empty_space_inner"></span>
+								</div>
+								<div class="wpb_text_column wpb_content_element ">
+									<div class="wpb_wrapper">
+										<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+											ut tellus congue, convallis tortor et, pellentesque diam.
+											Nullam non dolor eu ligula ultrices pellentesque placerat
+											imperdiet metus. Etiam lobortis bibendum egestas. In quis
+											massa a felis molestie consequat rhoncus vitae nisl. In
+											pharetra posuere dictum. In eget metus eu leo rutrum
+											venenatis vitae sit amet elit. Duis luctus enim enim.</p>
+
+									</div>
+								</div>
+								<div class="vc_row wpb_row vc_inner vc_row-fluid">
+									<div class="wpb_column vc_column_container vc_col-sm-4">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="aboutus">
+													<div class="number">
+														<figure>68
+														</figure>
+														<aside>Persons Mentored</aside>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="wpb_column vc_column_container vc_col-sm-4">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="aboutus">
+													<div class="number">
+														<figure>45
+														</figure>
+														<aside>Workshops Attended</aside>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="wpb_column vc_column_container vc_col-sm-4">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="aboutus">
+													<div class="number">
+														<figure>12
+														</figure>
+														<aside>Coaching Certificates</aside>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1452826009702  vc_custom_1452826009702">
+									<span class="vc_sep_holder vc_sep_holder_l"><span
+										class="vc_sep_line"></span></span><span
+										class="vc_sep_holder vc_sep_holder_r"><span
+										class="vc_sep_line"></span></span>
+								</div>
+								<a href=""
+									class="link underline">MORE ABOUT ME</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vc_rows wpb_row vc_row-fluid vc_custom_1452828449397">
+				<div class="container">
+					<div class="row">
+						<div
+							class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
+							<div class="vc_custom_1473395040049">
+								<h2
+									style="text-align: center; color: #ffffff; margin-bottom: 30px;">
+									<strong>Your Daily Motivation Quote</strong>
+								</h2>
+								<div class="vc_row wpb_row vc_inner vc_row-fluid">
+									<div
+										class="wpb_column vc_column_container vc_col-sm-8 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-2 vc_col-xs-offset-1 vc_col-xs-10">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div class="tnp tnp-subscription">
+													<form method="post"
+														action="http://demo.oceanthemes.net/mentor/?na=s"
+														onsubmit="return newsletter_check(this)">
+
+														<input type="hidden" name="nlang" value=""> <input
+															type="hidden" name="nr" value="page">
+														<div class="tnp-field tnp-field-email">
+															<label>Email</label><input class="tnp-email" type="email"
+																name="ne" required="" placeholder="Enter your e-mail">
+														</div>
+														<div class="tnp-field tnp-field-button">
+															<input class="tnp-submit" type="submit" value="Subscribe">
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="five-steps-to-success"
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1453367742462 vc_row-has-fill">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<h2 style="text-align: center;">Five Steps to Your Success</h2>
+
+								<div class="step width-20">
+									<figure>
+										<aside>1.</aside>
+										<div class="bar height-20">
+											<div class="arrow"
+												style="background-image: url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/arrow-right.png)"></div>
+										</div>
+									</figure>
+									<h3>Contact Me</h3>
+									<hr>
+									<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+										ut tellus congue, convallis tortor et</p>
+								</div>
+
+								<div class="step width-20">
+									<figure>
+										<aside>2.</aside>
+										<div class="bar height-40">
+											<div class="arrow"
+												style="background-image: url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/arrow-right.png)"></div>
+										</div>
+									</figure>
+									<h3>Make an Appointment</h3>
+									<hr>
+									<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+										ut tellus congue, convallis tortor et</p>
+								</div>
+
+								<div class="step width-20">
+									<figure>
+										<aside>3.</aside>
+										<div class="bar height-60">
+											<div class="arrow"
+												style="background-image: url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/arrow-right.png)"></div>
+										</div>
+									</figure>
+									<h3>I will Analyze Your Profile</h3>
+									<hr>
+									<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+										ut tellus congue, convallis tortor et</p>
+								</div>
+
+								<div class="step width-20">
+									<figure>
+										<aside>4.</aside>
+										<div class="bar height-80">
+											<div class="arrow"
+												style="background-image: url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/arrow-right.png)"></div>
+										</div>
+									</figure>
+									<h3>Apply Changes</h3>
+									<hr>
+									<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+										ut tellus congue, convallis tortor et</p>
+								</div>
+
+								<div class="step width-20">
+									<figure>
+										<aside>5.</aside>
+										<div class="bar height-100">
+											<div class="arrow"
+												style="background-image: url(http://demo.oceanthemes.net/mentor/wp-content/uploads/2016/01/arrow-right.png)"></div>
+										</div>
+									</figure>
+									<h3>Apply Changes</h3>
+									<hr>
+									<p>Sed iaculis dapibus tellus eget condimentum. Curabitur
+										ut tellus congue, convallis tortor et</p>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<div class="vc_empty_space" style="height: 32px">
+									<span class="vc_empty_space_inner"></span>
+								</div>
+								<div class="center">
+									<span></span> <a
+										href="http://demo.oceanthemes.net/mentor/meet-me/"
+										class="btn btn-default btn-big">Contact Me!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1453175624677 vc_row-has-fill">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<h2 style="text-align: center;">Do You Want a Successful
+									Life?</h2>
+								<div
+									class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1452833131037  vc_custom_1452833131037">
+									<span class="vc_sep_holder vc_sep_holder_l"><span
+										class="vc_sep_line"></span></span><span
+										class="vc_sep_holder vc_sep_holder_r"><span
+										class="vc_sep_line"></span></span>
+								</div>
+								<h3 style="text-align: center;">Enter your name and e-mail
+									and I will tell you for free!</h3>
+								<div class="vc_row wpb_row vc_inner vc_row-fluid">
+									<div
+										class="wpb_column vc_column_container vc_col-sm-10 vc_col-sm-offset-1">
+										<div class="vc_column-inner">
+											<div class="wpb_wrapper">
+												<div role="form" class="wpcf7" id="wpcf7-f224-p462-o1"
+													lang="en-US" dir="ltr">
+													<div class="screen-reader-response"></div>
+													<form
+														action="http://demo.oceanthemes.net/mentor/home-booked/#wpcf7-f224-p462-o1"
+														method="post" class="wpcf7-form" novalidate="novalidate">
+														<div style="display: none;">
+															<input type="hidden" name="_wpcf7" value="224"> <input
+																type="hidden" name="_wpcf7_version" value="5.1.5">
+															<input type="hidden" name="_wpcf7_locale" value="en_US">
+															<input type="hidden" name="_wpcf7_unit_tag"
+																value="wpcf7-f224-p462-o1"> <input type="hidden"
+																name="_wpcf7_container_post" value="462">
+														</div>
+														<div class="row">
+															<div class="col-md-5">
+																<div class="form-group">
+																	<span class="wpcf7-form-control-wrap name"><input
+																		type="text" name="name" value="" size="40"
+																		class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control framed"
+																		id="name" aria-required="true" aria-invalid="false"
+																		placeholder="Your Name"></span>
+																</div>
+															</div>
+															<div class="col-md-5">
+																<div class="form-group">
+																	<span class="wpcf7-form-control-wrap email"><input
+																		type="email" name="email" value="" size="40"
+																		class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control framed"
+																		id="email" aria-required="true" aria-invalid="false"
+																		placeholder="Your E-mail"></span>
+																</div>
+															</div>
+															<div class="col-md-2">
+																<div class="form-group">
+																	<input type="submit" value="Send Me"
+																		class="wpcf7-form-control wpcf7-submit btn btn-primary width-100"><span
+																		class="ajax-loader"></span>
+																</div>
+															</div>
+															<div class="form-status"></div>
+														</div>
+														<div class="wpcf7-response-output wpcf7-display-none"></div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="appointment"
+				class="vc_rows wpb_row vc_row-fluid vc_custom_1454406029912">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<h2 style="text-align: center; margin-bottom: 20px;">Make
+									an Appointment With Me</h2>
+
+								<div
+									class="wpb_text_column wpb_content_element  vc_custom_1470286303363">
+									<div class="wpb_wrapper">
+										<p style="text-align: center;">
+											Kim Williams is a Certified Executive Coach (CEC) and a
+											member of the International Coach Federation (ICF).<br>
+											She coaches individuals and teams, mostly professionals in
+											the investment and finance sector. Her services are full<br>
+											featured and she wants to help you reach your business goals.
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1">
+							<div class="">
+								<div class="wpb_text_column wpb_content_element ">
+									<div class="wpb_wrapper">
+										<div class="booked-calendar-shortcode-wrap">
+											<div class="booked-calendar-wrap large"
+												data-default="2020-03-01" style="height: 884px;">
+												<table class="booked-calendar booked-pa-active"
+													data-calendar-date="2020-03-01">
+													<thead>
+
+
+														<tr>
+															<th colspan="7"><span class="calendarSavingState">
+																	<i
+																	class="booked-icon booked-icon-spinner-clock booked-icon-spin"></i>
+															</span> <span class="monthName"> March 2020 </span> <a
+																href="http://demo.oceanthemes.net/mentor/home-booked/#"
+																data-goto="2020-04-01" class="page-right"><i
+																	class="booked-icon booked-icon-arrow-right"></i></a></th>
+														</tr>
+														<tr class="days">
+															<th>Mon</th>
+															<th>Tue</th>
+															<th>Wed</th>
+															<th>Thu</th>
+															<th>Fri</th>
+															<th>Sat</th>
+															<th>Sun</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="week">
+															<td data-date="2020-02-24" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">24</span></span></td>
+															<td data-date="2020-02-25" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">25</span></span></td>
+															<td data-date="2020-02-26" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">26</span></span></td>
+															<td data-date="2020-02-27" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">27</span></span></td>
+															<td data-date="2020-02-28" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">28</span></span></td>
+															<td data-date="2020-02-29" class="prev-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">29</span></span></td>
+															<td data-date="2020-03-1" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">1</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-2" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">2</span></span></td>
+															<td data-date="2020-03-3" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">3</span></span></td>
+															<td data-date="2020-03-4" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">4</span></span></td>
+															<td data-date="2020-03-5" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">5</span></span></td>
+															<td data-date="2020-03-6" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">6</span></span></td>
+															<td data-date="2020-03-7" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">7</span></span></td>
+															<td data-date="2020-03-8" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">8</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-9" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">9</span></span></td>
+															<td data-date="2020-03-10" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">10</span></span></td>
+															<td data-date="2020-03-11" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">11</span></span></td>
+															<td data-date="2020-03-12" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">12</span></span></td>
+															<td data-date="2020-03-13" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">13</span></span></td>
+															<td data-date="2020-03-14" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">14</span></span></td>
+															<td data-date="2020-03-15" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">15</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-16" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">16</span></span></td>
+															<td data-date="2020-03-17" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">17</span></span></td>
+															<td data-date="2020-03-18" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">18</span></span></td>
+															<td data-date="2020-03-19" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">19</span></span></td>
+															<td data-date="2020-03-20" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">20</span></span></td>
+															<td data-date="2020-03-21" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">21</span></span></td>
+															<td data-date="2020-03-22" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">22</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-23" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">23</span></span></td>
+															<td data-date="2020-03-24" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">24</span></span></td>
+															<td data-date="2020-03-25" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">25</span></span></td>
+															<td data-date="2020-03-26" class="today"
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">26</span></span></td>
+															<td data-date="2020-03-27" class=""
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">27</span></span></td>
+															<td data-date="2020-03-28" class=""
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">28</span></span></td>
+															<td data-date="2020-03-29" class="prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">29</span></span></td>
+														</tr>
+														<tr class="week">
+															<td data-date="2020-03-30" class=""
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">30</span></span></td>
+															<td data-date="2020-03-31" class=""
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">31</span></span></td>
+															<td data-date="2020-04-1" class="next-month"
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">1</span></span></td>
+															<td data-date="2020-04-2" class="next-month"
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">2</span></span></td>
+															<td data-date="2020-04-3" class="next-month"
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">3</span></span></td>
+															<td data-date="2020-04-4" class="next-month"
+																style="height: 135px;"><span
+																class="date tooltipster tooltipstered"
+																style="line-height: 133px;"><span class="number"
+																	style="">4</span></span></td>
+															<td data-date="2020-04-5" class="next-month prev-date"
+																style="height: 135px;"><span class="date"
+																style="line-height: 133px;"><span class="number"
+																	style="">5</span></span></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vc_rows wpb_row vc_row-fluid">
+				<div class="no-padd">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<div
+									class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey vc_custom_1452833813241  vc_custom_1452833813241">
+									<span class="vc_sep_holder vc_sep_holder_l"><span
+										class="vc_sep_line"></span></span><span
+										class="vc_sep_holder vc_sep_holder_r"><span
+										class="vc_sep_line"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vc_rows wpb_row vc_row-fluid vc_custom_1452840926474">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<h2 style="">Successful Stories</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="vc_rows wpb_row vc_row-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="">
+								<div class="row">
+
+									<div id="testimonial-masonry" class="masonry"
+										style="position: relative; height: 572.667px;">
+
+										<div class="col-md-6 item"
+											style="position: absolute; left: 0px; top: 0px;">
+											<div class="story">
+												<div class="image">
+													<img src="./resources/images/person-01.jpg"
+														alt="">
+												</div>
+												<blockquote>
+													<div class="inner">
+														<p>
+															Praesent cursus nulla non arcu tempor, ut egestas elit
+															tempus. In ac ex fermentum, gravida<br> felis nec,
+															tincidunt ligula. Sed dapibus mauris ullamcorper.
+														</p>
+														<footer>JANE DOE</footer>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+
+										<div class="col-md-6 item"
+											style="position: absolute; left: 585px; top: 0px;">
+											<div class="story">
+												<div class="image">
+													<img src="./resources/images/person-02."
+											alt="">
+												</div>
+												<blockquote>
+													<div class="inner">
+														<p>Integer efficitur dictum mi ac lobortis. Sed
+															finibus, diam id mollis auctor, odio ligula sagittis
+															nisl, vitae volutpat metus nisi vitae risus. Donec tempus
+															augue sit amet malesuada pretium.</p>
+														<p>Etiam pulvinar, urna a iaculis sagittis, purus
+															turpis ornare justo, porta volutpat turpis mi et sapien.
+															Nullam sodales lorem sed pulvinar mattis. Cras gravida.</p>
+														<footer>Catherine Brown</footer>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+
+										<div class="col-md-6 item"
+											style="position: absolute; left: 0px; top: 247px;">
+											<div class="story">
+												<div class="image">
+													<img src="./resources/images/person-04.jpg"
+														alt="">
+												</div>
+												<blockquote>
+													<div class="inner">
+														<p>
+															Etiam pulvinar, urna a iaculis sagittis, purus turpis
+															ornare justo, porta volutpat turpis<br> mi et
+															sapien. Nullam sodales lorem sed pulvinar mattis. Cras
+															gravida, libero in commodo<br> vehicula, mauris mi
+															finibus leo, quis tincidunt turpis augue vitae lorem.
+														</p>
+														<footer>Nellie Gibson</footer>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+
+										<div class="col-md-6 item"
+											style="position: absolute; left: 585px; top: 348px;">
+											<div class="story">
+												<div class="image">
+													<img src="./resources/images/person-03.jpg"
+														alt="">
+												</div>
+												<blockquote>
+													<div class="inner">
+														<p>Cras gravida, libero in commodo vehicula, mauris mi
+															finibus leo, quis tincidunt turpis augue vitae lorem.</p>
+														<footer>Jack Hayes</footer>
+													</div>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="f2-layout">
+				<!-- footer begin -->
+				<footer class="footer-2">
+					<div class="main-footer">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-3 col-sm-6">
+									<div id="text-2" class="widget widget_text">
+										<div class="textwidget">
+											<p>
+												<img src="./Home Booked – Mentor_files/logo-2-1.png"
+													alt="Mentor">
+											</p>
+											<p>Integer efficitur dictum mi ac lobortis. Sed finibus,
+												diam id mollis auctor, odio ligula sagittis nisl, vitae
+												volutpat metus nisi vitae risus sit amet malesuada pretium.</p>
+											<p>Cras gravida, libero in commodo vehicula, mauris mi
+												finibus leo, quis tincidunt turpis augue vitae lorem.</p>
+										</div>
+									</div>
+								</div>
+								<!-- end col-lg-3 -->
+								<div class="col-md-3 col-sm-6">
+									<div id="nav_menu-3" class="widget widget_nav_menu">
+										<h4>Latest Events</h4>
+										<div class="menu-footer-menu-container">
+											<ul id="menu-footer-menu" class="menu">
+												<li id="menu-item-792"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-792"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Why
+														You need a Personal Mentor</a></li>
+												<li id="menu-item-793"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-793"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Kick-up
+														Your Career</a></li>
+												<li id="menu-item-795"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-795"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Life
+														Success is Never Ending Battle</a></li>
+												<li id="menu-item-794"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-794"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Why
+														You need a Personal Mentor</a></li>
+												<li id="menu-item-796"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-796"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Kick-up
+														Your Career</a></li>
+												<li id="menu-item-797"
+													class="menu-item menu-item-type-custom menu-item-object-custom menu-item-797"><a
+													href="http://demo.oceanthemes.net/mentor/workshops/">Life
+														Success is Never Ending Battle</a></li>
+											</ul>
+										</div>
+									</div>
+
+
+								</div>
+								<!-- end col-lg-3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="col-md-3 col-sm-6">
+
+
+
+									<div id="recent-posts-2" class="widget widget_recent_entries">
+										<h4>Recent Posts</h4>
+										<ul>
+											<li><a
+												href="http://demo.oceanthemes.net/mentor/blog/vivamus-porta/">Vivamus
+													porta orci eu turpis vulputate</a></li>
+											<li><a
+												href="http://demo.oceanthemes.net/mentor/blog/nulla-sapien-leo-placerat-sed-lacinia-nec-rutrum-quis/">Nulla
+													sapien leo, placerat sed lacinia nec, rutrum quis</a></li>
+											<li><a
+												href="http://demo.oceanthemes.net/mentor/blog/vivamus-porta-orci-eu-turpis-vulputate-ornare-fusce-hendrerit-arcu-risu/">Cras
+													commodo, velit nec aliquam dictum, tortor velit dictum
+													ipsum.</a></li>
+											<li><a
+												href="http://demo.oceanthemes.net/mentor/blog/soundcloud-audio-post/">Vestibulum
+													sagittis sapien vitae tristique mollis.</a></li>
+										</ul>
+									</div>
+
+
+								</div>
+								<!-- end col-lg-3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<div class="col-md-3 col-sm-6">
+
+
+
+									<div id="newsletterwidget-2"
+										class="widget widget_newsletterwidget">
+										<h4>Newsletter</h4>
+										Subscribe to our Newsletter for latest news.
+										<div class="tnp tnp-widget">
+											<form method="post"
+												action="http://demo.oceanthemes.net/mentor/?na=s"
+												onsubmit="return newsletter_check(this)">
+
+												<input type="hidden" name="nlang" value=""> <input
+													type="hidden" name="nr" value="widget"> <input
+													type="hidden" name="nl[]" value="0">
+												<div class="tnp-field tnp-field-email">
+													<label>Email</label><input class="tnp-email" type="email"
+														name="ne" required="">
+												</div>
+												<div class="tnp-field tnp-field-button">
+													<input class="tnp-submit" type="submit" value="Subscribe">
+												</div>
+											</form>
+										</div>
+									</div>
+
+
+								</div>
+								<!-- end col-lg-3 -->
+
+
+
+
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="subfooter">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 col-sm-12 text-right">
+									<!-- social icons -->
+									<ul class="social-list">
+
+										<li><a target="_blank"
+											href="https://www.facebook.com/oceanthemes"><i
+												class="fa fa-facebook"></i></a></li>
+
+
+										<li><a target="_blank"
+											href="https://twitter.com/oceanthemes2014"><i
+												class="fa fa-twitter"></i></a></li>
+
+										<li><a target="_blank"
+											href="http://demo.oceanthemes.net/mentor/home-booked/#"><i
+												class="fa fa-pinterest"></i></a></li>
+
+
+
+										<li><a target="_blank"
+											href="http://demo.oceanthemes.net/mentor/home-booked/"><i
+												class="fa fa-skype"></i></a></li>
+
+										<li><a target="_blank"
+											href="http://demo.oceanthemes.net/mentor/home-booked/#"><i
+												class="fa fa-instagram"></i></a></li>
+
+										<li><a target="_blank"
+											href="http://demo.oceanthemes.net/mentor/home-booked/#"><i
+												class="fa  fa-behance"></i></a></li>
+
+									</ul>
+									<!-- social icons close -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<a id="back-to-top"
+						href="http://demo.oceanthemes.net/mentor/home-booked/#" class=""></a>
+				</footer>
+				<!-- footer close -->
+			</div>
+		</div>
+		<!-- .page-wrapper -->
+	</div>
+	<!-- .outer-wrapper -->
+	<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+	<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script>
+	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/core.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/datepicker.min.js"></script>
+	<script type="text/javascript">
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/spin.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/spin.jquery.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/jquery.tooltipster.min.js"></script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var booked_js_vars = {"ajax_url":"http:\/\/demo.oceanthemes.net\/mentor\/wp-admin\/admin-ajax.php","profilePage":"http:\/\/demo.oceanthemes.net\/mentor\/profile\/","publicAppointments":"on","i18n_confirm_appt_delete":"Are you sure you want to cancel this appointment?","i18n_please_wait":"Please wait ...","i18n_wrong_username_pass":"Wrong username\/password combination.","i18n_fill_out_required_fields":"Please fill out all required fields.","i18n_guest_appt_required_fields":"Please enter your name to book an appointment.","i18n_appt_required_fields":"Please enter your name, your email address and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fields.","i18n_password_reset":"Please check your email for instructions on resetting your password.","i18n_password_reset_error":"That username or email is not recognized."};
+/* ]]> */
+</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/functions.js"></script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/demo.oceanthemes.net\/mentor\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/scripts.js.download"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/js.cookie.min.js"></script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/mentor\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/mentor\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/woocommerce.min.js"></script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/mentor\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/mentor\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_e2e931f8a81d64f95d38ef518073247a","fragment_name":"wc_fragments_e2e931f8a81d64f95d38ef518073247a","request_timeout":"5000"};
+/* ]]> */
+</script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/cart-fragments.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/bootstrap.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/bootstrap-select.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/jquery.mb.YTPlayer.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/jquery.simple-text-rotator.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/owl.carousel.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/jquery.fitvids.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/jquery.isotope.min.js"></script>
+	<script type="text/javascript"
+		src="./Home Booked – Mentor_files/custom.js"></script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var newsletter = {"messages":{"email_error":"The email is not correct","name_error":"The name is not correct","surname_error":"The last name is not correct","profile_error":"A mandatory field is not filled in","privacy_error":"You must accept the privacy statement"},"profile_max":"20"};
+/* ]]> */
+</script>
+	<script type="text/javascript" src="./resources/Jscript/validate.js"></script>
+	<script type="text/javascript"
+		src="./resources/Jscript/wp-embed.min.js"></script>
+	<script type="text/javascript"
+		src="./resources/Jscript/js_composer_front.min.js"></script>
+
+</body>
 </html>
